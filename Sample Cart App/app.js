@@ -35,7 +35,7 @@ app.use("/admin", adminRouter);
 app.use(adminRouter);
 
 mongoose
-  .connect("mongodb+srv://perfect:perfect123@sample.tfh3q.mongodb.net/sample")
+  .connect("mongo url connection ")
   .then((result) => {
     User.findOne().then((user) => {
       if (!user) {
